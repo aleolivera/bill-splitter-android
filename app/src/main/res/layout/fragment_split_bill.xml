@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20sp"
+    android:paddingBottom="80sp"
+    tools:context=".ui.splitbill.SplitBillFragment">
+
+    <TextView
+        android:id="@+id/tvSplitTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+
+        android:text="@string/title_split_bill"
+        style="@style/TextTitleLarge"/>
+
+    <TextView
+        android:id="@+id/tvSplitTotalSpent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+
+        style="@style/TextSubTitleLarge"/>
+
+    <TextView
+        android:id="@+id/tvSplitTotalSplit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+
+        style="@style/TextSubTitleLarge"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSplitBill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"/>
+
+</LinearLayout>
